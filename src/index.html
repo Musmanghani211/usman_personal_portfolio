@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <img src="../images/logo.jpg" alt="Logo" class="logo" />
+        <h1>My Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-bottom">
+        <div class="intro">
+          <p>
+            Welcome to my personal website where you can learn more about me and
+            my work.
+          </p>
+        </div>
+        <img
+          src="../images/profile.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+      </div>
+    </header>
+    <main>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+          <img src="../images/web_development.jpg" alt="Web Development" />
+          <h3>Web Development</h3>
+          <p>
+            Expertise in creating dynamic and responsive websites using HTML,
+            CSS, and JavaScript.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/javascript.jpg" alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <p>
+            Proficient in JavaScript for frontend and backend development,
+            including frameworks like React and Node.js.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/php.jpg" alt="PHP" />
+          <h3>PHP</h3>
+          <p>
+            Experienced in server-side scripting with PHP for creating robust
+            web applications.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/frontend.jpg" alt="Frontend" />
+          <h3>Frontend Development</h3>
+          <p>
+            Skilled in crafting visually appealing and user-friendly interfaces.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/backend.jpg" alt="Backend" />
+          <h3>Backend Development</h3>
+          <p>
+            Strong understanding of backend technologies and databases for
+            efficient data management.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/testing.jpg" alt="Testing" />
+          <h3>Testing and Debugging</h3>
+          <p>
+            Proficient in testing and debugging to ensure code quality and
+            performance.
+          </p>
+        </div>
+        <div class="skill-box">
+          <img src="../images/responsive_design.jpg" alt="Responsive Design" />
+          <h3>Responsive Design</h3>
+          <p>Ensuring websites are accessible and look great on all devices.</p>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="contact.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <section id="social-media">
+        <h2>Follow Me</h2>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img src="../images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img src="../images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><img src="../images/twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://www.tiktok.com" target="_blank"
+            ><img src="../images/tiktok.png" alt="TikTok"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    <script src="../script/scripts.js"></script>
+  </body>
+</html>
