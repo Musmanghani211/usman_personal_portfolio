@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Connect to MySQL database
-    $conn = new mysqli('localhost', 'your_username', 'your_password', 'your_database');
+    $conn = new mysqli('localhost', 'root', '', 'personal_profile');
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);

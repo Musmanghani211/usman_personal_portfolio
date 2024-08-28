@@ -1,5 +1,7 @@
+/* General styles */
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -7,149 +9,291 @@ body {
 
 header {
   background-color: #333;
-  color: white;
-  padding: 1em 0;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
 }
 
+/* Header top styles */
 .header-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  max-width: 90%;
-  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.header-top .logo {
-  width: 50px;
-  height: auto;
+.header-top img.logo {
+  height: 156px;
+  margin-left: 30px;
 }
 
 .header-top h1 {
   margin: 0;
+  font-size: 24px;
 }
 
 .header-top nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  gap: 1em;
 }
 
 .header-top nav ul li {
-  display: inline;
+  margin-left: 20px;
 }
 
 .header-top nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.header-top nav ul li a:hover {
-  text-decoration: underline;
-}
-
+/* Header bottom styles */
 .header-bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  max-width: 94%;
-  margin: 11em auto 0;
-  padding-bottom: 9em;
-  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 70px;
 }
 
 .header-bottom .intro {
-  text-align: left;
   max-width: 60%;
-  margin-right: 2em;
+  margin: auto;
+}
+
+.header-bottom .intro p {
+  background-color: #555;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .header-bottom .profile-pic {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  height: 335px;
+  /* border-radius: 50%; */
+  margin-left: 40px;
 }
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2em;
+/* Skills section */
+#skills {
+  padding: 20px;
+  background-color: #fff;
 }
 
-section {
-  margin-bottom: 2em;
+/* #skills h2 {
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+} */
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-box {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 1em;
-  margin-bottom: 1em;
-  text-align: left;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
 
 .skill-box img {
   width: 100%;
   height: auto;
-}
-
-.skill-box h3 {
-  margin-top: 0.5em;
-}
-
-form {
-  background-color: white;
-  padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label,
-form input,
-form textarea,
-form button {
   display: block;
-  width: 100%;
-  margin-bottom: 1em;
+  margin: 0 auto;
 }
 
-form input,
-form textarea {
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-form button {
-  background-color: #333;
+.skill-box h3,
+.skill-box p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 0.5em;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  opacity: 0;
 }
 
-form button:hover {
-  background-color: #555;
+.skill-box:hover {
+  transform: translateY(-10px);
 }
 
-.social-links {
+.skill-box:hover h3,
+.skill-box:hover p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* prjects section */
+.projects-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
 }
 
-.social-links a img {
-  width: 50px;
-  height: 50px;
-}
-
-footer {
-  background-color: #333;
-  color: white;
+.project-box {
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 1em 0;
+  transition: transform 0.3s;
+  padding: 20px;
+}
+
+.project-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-box h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
+}
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.project-box p {
+  font-size: 1em;
+  color: #666;
+  padding: 0 10px;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact section */
+#contact {
+  background-color: #fff;
+    width: 450px;
+    margin: 50px 0px 30px 31%;
+    padding: 49px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form label {
+  margin-top: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Social media section */
+#social-media {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#social-media h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-bottom {
+    padding: 10px;
+  }
+
+  .header-bottom .intro {
+    max-width: 100%;
+  }
+
+  .header-bottom .profile-pic {
+    height: 100px;
+  }
+
+  .skill-box {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-top nav ul {
+    margin-top: 10px;
+  }
+
+  .header-bottom .intro {
+    padding: 10px;
+  }
+
+  .header-bottom .profile-pic {
+    height: 80px;
+  }
+
+  .skill-box {
+    width: 100%;
+  }
 }
