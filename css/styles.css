@@ -98,10 +98,9 @@ header {
 
 .skill-box img {
   width: 40%;
-  height: 40%; /* Set image height as a percentage of the box height */
-  display: block;
-  margin: 0 auto;
-  object-fit: cover; /* Ensures the image covers its container without distortion */
+  height: 40%; 
+   margin-top: 10px;
+  object-fit: cover; 
 }
 
 .skill-box h3,
