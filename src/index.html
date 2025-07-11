@@ -1,273 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      .see-more-btn {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 7px;
+        padding: 6px 12px;
+        background-color: #007bff; /* Blue */
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Profile</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-</head>
+      .see-more-btn:hover {
+        background-color: #0056b3; /* Darker Blue */
+      }
+    </style>
+  </head>
 
-<body>
-  <header>
-    <div class="header-top">
-      <img src="../images/logo.png" alt="Logo" class="logo" />
-      <h1>Muhammad Usman Ghani</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-bottom">
-      <img src="../images/profile.png" alt="Profile Picture" class="profile-pic" />
-      <div class="intro">
-        <p>
-          I am a passionate and detail-oriented Quality Assurance (QA) professional with over a year of hands-on
-          experience at @Testiva, where I transitioned from an internship to a full-time role after demonstrating
-          consistent performance and dedication. My expertise lies primarily in manual testing, including test case
-          creation, bug reporting, and requirement analysis. In addition, I have working knowledge of automation tools
-          like Playwright and Selenium, which I’ve used to enhance test coverage and improve efficiency across projects.
-          I’m also experienced with Jira and Testworthy for test and project management, enabling me to effectively
-          collaborate with cross-functional teams and ensure high-quality deliverables. I have contributed to a variety
-          of projects, adapting quickly to new domains and ensuring robust testing at each stage of the development
-          lifecycle.
-        </p>
+  <body>
+    <header>
+      <div class="header-top">
+        <img src="../images/logo.png" alt="Logo" class="logo" />
+        <h1>Muhammad Usman Ghani</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </header>
-  <main>
-    <section id="skills">
-      <h2>Testing Skills</h2>
-      <div class="skills-row">
-        <div class="skill-box">
-          <img src="../images/manualtesting.jpg" alt="Web Development" />
-          <h3>Manual Testing</h3>
+      <div class="header-bottom">
+        <img
+          src="../images/profile.png"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="intro">
           <p>
-            In-depth experience in testing web and mobile applications manually, ensuring each feature works as expected
-            through functional, UI, and exploratory testing approaches.
-
-          </p>
-        </div>
-        <div class="skill-box">
-          <img src="../images/Automation.avif" alt="JavaScript"  />
-          <h3>Automation Testing</h3>
-          <p>
-            Hands-on experience automating test cases using Playwright and Selenium to improve efficiency, reduce
-            regression time, and ensure stability across releases.
-          </p>
-        </div>
-        <div class="skill-box">
-          <img src="../images/testingtypes.jpeg" alt="PHP" />
-          <h3>Testing Types</h3>
-          <p>
-            Skilled in applying various testing methods including Smoke, Regression, Sanity, UAT, and Compatibility
-            testing based on project requirements.
-
-
+            I am a passionate and detail-oriented Quality Assurance (QA)
+            professional with over a year of hands-on experience at @Testiva,
+            where I transitioned from an internship to a full-time role after
+            demonstrating consistent performance and dedication. My expertise
+            lies primarily in manual testing, including test case creation, bug
+            reporting, and requirement analysis. In addition, I have working
+            knowledge of automation tools like Playwright and Selenium, which
+            I’ve used to enhance test coverage and improve efficiency across
+            projects. I’m also experienced with Jira and Testworthy for test and
+            project management, enabling me to effectively collaborate with
+            cross-functional teams and ensure high-quality deliverables. I have
+            contributed to a variety of projects, adapting quickly to new
+            domains and ensuring robust testing at each stage of the development
+            lifecycle.
           </p>
         </div>
       </div>
-      <div class="skills-row">
-        <div class="skill-box">
-          <img src="../images/testingtools.jpg" alt="testing tools" style="margin-top: 15px;" />
-          <h3>Test Management tools</h3>
-          <p>
-            Hands-on experience with Jira and Testworthy for managing test cases, tracking bugs, and collaborating with teams in Agile environments.
-          </p>
-        </div>
-        <div class="skill-box">
-          <img src="../images/apitesting.jpg" alt="Backend" />
-          <h3>API Testing (Postman)</h3>
-          <p>
-            Experience testing REST APIs using Postman by validating responses, testing endpoints, writing test scripts,
-            and automating collection runs.
-
-
-          </p>
-        </div>
-        <div class="skill-box">
-          <img src="../images/agile.png" alt="Testing" />
-          <h3>Agile / Scrum </h3>
-          <p>
-            Worked in Agile environments with daily standups, sprint planning, retrospectives, and continuous
-            collaboration with cross-functional teams.
-          </p>
-        </div>
-      </div>
-      <div class="skills-row">
-        <div class="skill-box">
-          <img src="../images/bugtracking.png" alt="Responsive Design" />
-          <h3>Bug Reporting</h3>
-          <p>
-            Skilled in identifying, documenting, and reporting bugs with detailed steps to reproduce, expected vs actual
-            results, and severity classification.
-
-
-          </p>
-        </div>
-        <div class="skill-box">
-          <img src="../images/testcase.png" alt="Responsive Design" />
-          <h3>Test Case Design</h3>
-          <p>
-            Ability to design detailed, reusable, and traceable test cases that align with business requirements and
-            ensure full coverage of functionalities.
-          </p>
-        </div>
-
-        <div class="skill-box">
-          <img src="../images/crossbrowsing.jpg" alt="Responsive Design" />
-          <h3>Cross-Browser Testing</h3>
-          <p>
-            Tested applications across different browsers like Chrome, Firefox, Edge, and Safari to ensure consistent
-            user experience and behavior.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-row">
-        <div class="project-box">
-          <img src="../images/c++.png" alt="Employees Data Management System" />
-          <h3>Employees Data Management System</h3>
-          <p>
-            In Our Semester Project a system built in C++ for managing
-            employee data within a company, featuring functionalities for
-            adding, updating, and deleting employee records.
-          </p>
-        </div>
-        <div class="project-box">
-          <img src="../images/kiryana.png" alt="Kiryana Store Website" />
-          <h3>Kiryana Store Website</h3>
-          <p>
-            In Our Semester Project a system a simple website developed using
-            HTML, CSS, and JavaScript to display products of a grocery store.
-          </p>
-        </div>
-        <div class="project-box">
-          <img src="../images/hostel.jpeg" alt="Hostel Management System" />
-          <h3>Hostel Management System</h3>
-          <p>
-            In Our Semester Project I Created this project with XAML and C#,
-            this system manages student records and fees, including
-            functionalities to update, delete, and add new records.
-          </p>
-        </div>
-      </div>
-      <div class="projects-row">
-        <div class="project-box">
-          <img src="../images/fyp.PNG" alt="Pharmacy Management System" />
-          <h3>Pharmacy Management System</h3>
-          <p>
-            This final year project features an admin and user dashboard,
-            built using HTML, CSS, JavaScript, MySQL, PHP, Chart.js, and
-            various other packages and libraries. The website also includes a
-            section for visitors to view and order medicines as per their
-            requirements.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="contact.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-    <section id="social-media">
-      <h2>Follow Me</h2>
-      <div class="social-links">
-        <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook" /></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.avif" alt="Instagram" /></a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png" alt="Twitter" /></a>
-        <a href="https://www.tiktok.com" target="_blank"><img src="../images/tiktok.png" alt="TikTok"
-            style="height: 40px" /></a>
-      </div>
-    </section>
-
-    <section id="reviews">
-      <h2>Reviews</h2>
-      <div class="reviews-row">
-        <!-- Reviews will be dynamically added here -->
-      </div>
-    </section>
-
-    <section id="leave-review">
-      <h2>Leave a Review</h2>
-      <form id="review-form">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-group">
-          <label for="rating">Rating:</label>
-          <div class="rating">
-            <input type="radio" id="star5" name="rating" value="5" />
-            <label for="star5" title="5 stars">★</label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4" title="4 stars">★</label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3" title="3 stars">★</label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2" title="2 stars">★</label>
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1" title="1 star">★</label>
+    </header>
+    <main>
+      <section id="skills">
+        <h2>Testing Skills</h2>
+        <div class="skills-row">
+          <div class="skill-box">
+            <img src="../images/manualtesting.jpg" alt="manual testing" />
+            <h3>Manual Testing</h3>
+            <p>
+              In-depth experience in testing web and mobile applications
+              manually, ensuring each feature works as expected through
+              functional, UI, and exploratory testing approaches.
+            </p>
+            <a href="./skills/manual-testing.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
+          <div class="skill-box">
+            <img src="../images/Automation.avif" alt="JavaScript" />
+            <h3>Automation Testing</h3>
+            <p>
+              Hands-on experience automating test cases using Playwright and
+              Selenium to improve efficiency, reduce regression time, and ensure
+              stability across releases.
+            </p>
+            <a href="./skills/automation-testing.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
+          <div class="skill-box">
+            <img src="../images/testingtypes.jpeg" alt="PHP" />
+            <h3>Testing Types</h3>
+            <p>
+              Skilled in applying various testing methods including Smoke,
+              Regression, Sanity, UAT, and Compatibility testing based on
+              project requirements.
+            </p>
+            <a href="./skills/testing-types.html" class="see-more-btn"
+              >Explore Details</a
+            >
           </div>
         </div>
-
-        <div class="form-group">
-          <label for="review">Review:</label><br />
-          <textarea id="review" name="review" required></textarea>
+        <div class="skills-row">
+          <div class="skill-box">
+            <img
+              src="../images/testingtools.jpg"
+              alt="testing tools"
+              style="margin-top: 15px"
+            />
+            <h3>Test Management tools</h3>
+            <p>
+              Hands-on experience with Jira and Testworthy for managing test
+              cases, tracking bugs, and collaborating with teams in Agile
+              environments.
+            </p>
+            <a href="./skills/test-management-tools.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
+          <div class="skill-box">
+            <img src="../images/apitesting.jpg" alt="Backend" />
+            <h3>API Testing (Postman)</h3>
+            <p>
+              Experience testing REST APIs using Postman by validating
+              responses, testing endpoints, writing test scripts, and automating
+              collection runs.
+            </p>
+            <a href="./skills/api-testing.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
+          <div class="skill-box">
+            <img src="../images/agile.png" alt="Testing" />
+            <h3>Agile / Scrum </h3>
+            <p>
+              Worked in Agile environments with daily standups, sprint planning,
+              retrospectives, and continuous collaboration with cross-functional
+              teams.
+            </p>
+            <a href="./skills/agile-scrum.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
         </div>
+        <div class="skills-row">
+          <div class="skill-box">
+            <img src="../images/bugtracking.png" alt="Responsive Design" />
+            <h3>Bug Reporting</h3>
+            <p>
+              Skilled in identifying, documenting, and reporting bugs with
+              detailed steps to reproduce, expected vs actual results, and
+              severity classification.
+            </p>
+            <a href="./skills/bug-reporting.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
+          <div class="skill-box">
+            <img src="../images/testcase.png" alt="Responsive Design" />
+            <h3>Test Case Design</h3>
+            <p>
+              Ability to design detailed, reusable, and traceable test cases
+              that align with business requirements and ensure full coverage of
+              functionalities.
+            </p>
+            <a href="./skills/testcase-design.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+          <div class="skill-box">
+            <img src="../images/crossbrowsing.jpg" alt="Responsive Design" />
+            <h3>Cross-Browser Testing</h3>
+            <p>
+              Tested applications across different browsers like Chrome,
+              Firefox, Edge, and Safari to ensure consistent user experience and
+              behavior.
+            </p>
+            <a href="./skills/cross-browing.html" class="see-more-btn"
+              >Explore Details</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-row">
+          <div class="project-box">
+            <img
+              src="../images/kidoprotect.png"
+              alt="Employees Data Management System"
+            />
+            <h3>Kido Protect App</h3>
+            <p>
+              Tested child and parent apps for monitoring, access control, QR
+              linking, PIN management, and subscription flow.
+            </p>
+          </div>
+          <div class="project-box">
+            <img src="../images/nextiva.png" alt="Kiryana Store Website" />
+            <h3>Nextiva Blog Website</h3>
+            <p>
+              Performed cross-device UI testing, link verification, layout
+              checks, and content accuracy validation.
+            </p>
+          </div>
+          <div class="project-box">
+            <img src="../images/youthai.jpg" alt="Hostel Management System" />
+            <h3>Youth 360</h3>
+            <p>
+              Validated health checkups, score accuracy, app flow, and user data
+              handling across modules.
+            </p>
+          </div>
+        </div>
+        <div class="projects-row">
+          <div class="project-box">
+            <img
+              src="../images/youthhealthhub.jpg"
+              alt="Pharmacy Management System"
+            />
+            <h3>Korolev Health Hub</h3>
+            <p>
+              Testing health tracking, UI flow, biomarker scores, subscription
+              plans, and advanced assessments (face video, voice, body scan).
+            </p>
+          </div>
+        </div>
+      </section>
 
-  </main>
-  <footer>
-    <p>&copy; 2024 My Portfolio</p>
-  </footer>
-  <script src="../script/scripts.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const reviewForm = document.getElementById("review-form");
-      const reviewsContainer = document.querySelector(".reviews-row");
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="contact.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <section id="social-media">
+        <h2>Follow Me</h2>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank"
+            ><img src="../images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img src="../images/instagram.avif" alt="Instagram"
+          /></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><img src="../images/twitter.png" alt="Twitter"
+          /></a>
+          <a href="https://www.tiktok.com" target="_blank"
+            ><img src="../images/tiktok.png" alt="TikTok" style="height: 40px"
+          /></a>
+        </div>
+      </section>
 
-      reviewForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-row">
+          <!-- Reviews will be dynamically added here -->
+        </div>
+      </section>
 
-        const name = document.getElementById("name").value;
-        const rating = document.getElementById("rating").value;
-        const review = document.getElementById("review").value;
+      <section id="leave-review">
+        <h2>Leave a Review</h2>
+        <form id="review-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-        const newReview = document.createElement("div");
-        newReview.classList.add("review-box");
-        newReview.innerHTML = `
+          <div class="form-group">
+            <label for="rating">Rating:</label>
+            <div class="rating">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 stars">★</label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" title="1 star">★</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="review">Review:</label><br />
+            <textarea id="review" name="review" required></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Usman Ghani. All rights reserved.</p>
+    </footer>
+    <script src="../script/scripts.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const reviewForm = document.getElementById('review-form');
+        const reviewsContainer = document.querySelector('.reviews-row');
+
+        reviewForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById('name').value;
+          const rating = document.getElementById('rating').value;
+          const review = document.getElementById('review').value;
+
+          const newReview = document.createElement('div');
+          newReview.classList.add('review-box');
+          newReview.innerHTML = `
       <h3>${name}</h3>
-      <div class="stars">${"★".repeat(rating)}</div>
+      <div class="stars">${'★'.repeat(rating)}</div>
       <p>${review}</p>
     `;
 
-        reviewsContainer.appendChild(newReview);
+          reviewsContainer.appendChild(newReview);
 
-        // Reset form after submission
-        reviewForm.reset();
+          // Reset form after submission
+          reviewForm.reset();
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
